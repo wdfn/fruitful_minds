@@ -1,0 +1,9 @@
+include(`team/template.m4')dnl
+FM_TEAM_BIO(`Anne Kim',
+`Marketing Director, Nutritional Sciences', `students',
+
+`<p>Anne began working with Fruitful Minds in September 2011 as the Grant Manager.  She has the responsibility of researching and drafting grant proposals with the goal of funding Fruitful Minds.  She is currently working as a student ambassador for the Fruitful Minds DeCal, where she visits middle schools in the Bay Area to teach and spread awareness of nutrition.   These roles help her understand the different aspects of the organization.</p>
+
+<p>Anne has been interested in nutrition ever since high school, where she founded the Nutrition Club.  As the club president she coordinated and organized groups of students to teach nutrition in local elementary and middle schools.  She also volunteered at the VA La Jolla Hospital for two years working closely with the Dietetics Department.  While there, she helped establish the &quot;Work it Up&quot; program, which was coordinated to help veterans better understand nutritional health.  Anne is currently a Nutritional Science major at UC Berkeley with the intent to minor in Public Policy.  She has been a member of the Student Dietetics Association for the past two years.  She also worked with Nutritional Science graduate students where she helped research and collect data that dealt with the food and health quality of government funded and non-government funded food banks.  She currently works with the San Francisco General Hospital nutrition awareness program where she hopes to reach out to pregnant teen mothers in the Bay Area.</p>
+
+<p>Anne grew up in San Diego and hopes to eventually return as a Registered Dietitian.  She&apos;s hopeful that she can make a difference in the community with her background in nutrition education.</p>')

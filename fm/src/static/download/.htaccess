@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Fruitful Minds curriculum download"
+AuthUserFile /home2/fruitful/public_html/download/.htpasswd
+Require valid-user

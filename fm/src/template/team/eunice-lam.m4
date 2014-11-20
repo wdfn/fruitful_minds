@@ -1,0 +1,5 @@
+include(`team/template.m4')dnl
+FM_TEAM_BIO(`Eunice Lam',
+`Finance Director, Economics/Business', `students',
+
+`<p>Eunice is a second year student at UC Berkeley.  Born in Hong Kong and pursuing an education in the US, she has been afforded the opportunity to live in a bilingual and bi-cultural world.  Prior to joining Fruitful Minds as the Finance Director, she worked in several grassroots organizations on campaigns to demand educational equity, language access in public schools, and health care rights.  With the experience she gained through working with such nonprofit organizations, she has developed a strong passion to empower and support future generations to succeed.  She believes that staying healthy and taking care of our bodies is the first and most important step to success.  She values Fruitful Minds&apos; advocacy in early nutritional education and sees that it is a crucial part of sustaining a healthy new America.  As a member of the student board, she hopes to share her organizational skills and creativity to drive Fruitful Minds&apos; message forward.<p>')

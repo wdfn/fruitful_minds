@@ -1,0 +1,10 @@
+include(`team/template.m4')dnl
+FM_TEAM_BIO(`Julie Lee', `Program Manager, Nutritional Sciences', `students',
+
+`<p>Julie Chialin Lee joined Fruitful Minds in September 2010 as a student ambassador. Her role as a student ambassador allowed her to experience the core of Fruitful Minds &ndash; teaching nutrition to underprivileged children. In the following semester, Julie resumed the role as Program Director to oversee the teaching program. Her main responsibility is to maintain clear communication between schools and student ambassadors and to ensure that every aspect of the program goes smoothly and meets required guidelines.</p>
+
+<p>Julie grew up in Taiwan. Upon immigrating to the United States, she and her family experienced a different type of diet and lifestyle. This new lifestyle and diet habit has a tremendous impact on her family&apos;s health, especially on her father.  After her father suffered from a sudden heart failure, she was determined to change his lifestyle and dietary choices in order to better improve his health.</p>
+
+<p>With that goal in mind, Julie entered the major of nutritional science at UC Berkeley with an emphasis in dietetics. She has volunteered in several non-profit organizations hoping to apply her knowledge in nutrition and help others. Besides Fruitful Minds, Julie joined a national community service co-ed fraternity, Alpha Phi Omega. Through the fraternity, Julie had the opportunity to work with local food banks and churches to provide nutritious meals for those in need. Moreover, Julie volunteered at two different local hospitals in order to gain some clinical experiences in dietetics. She assisted Diet Technicians in interviewing patients about food preferences and possible food allergies and selecting a proper menu specific to a patient&apos;s condition.</p>
+
+<p>These experiences further solidified Julie&apos;s goal in obtaining a dietetic internship. Through the dietetic internship, Julie hopes to further assist individuals to better improve their health and lifestyle through means of dietary changes.</p>')

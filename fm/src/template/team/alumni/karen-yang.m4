@@ -1,0 +1,11 @@
+include(`team/template.m4')dnl
+FM_TEAM_BIO(`Karen Yang',
+`DeCal Coordinator and Curriculum Development Director, Nutritional Sciences', `students',
+
+`<p>Karen majors in nutritional science with an emphasis in physiology and metabolism. Karen started her work in Fruitful Minds in September 2010 as the Curriculum Review Director, where she evaluated the effectiveness of Fruitful Mind&apos;s nutrition education program by compiling assessments and surveys and analyzing the results. Later, she expanded her involvement in the organization by helping with curriculum development and becoming one of the facilitators of the Fruitful Minds Decal course.</p>
+
+<p>Karen grew up in Taipei, Taiwan, and came to America for college in fall of 2008. Transitioning from Taiwan to America, she had to adapt to various cultural and social differences, one of which was the difference in food culture. Growing up in a small country where fresh, unprocessed food is ubiquitous and extremely accessible, she recognized problems with some Americans&apos; diet, which led her to realize the importance of nutrition education in this country.</p>
+
+<p>Thus, as a nutritional science major, she dedicated herself in the area of nutrition in many different ways. She has been tutoring an introductory nutrition course and a chemistry course at the Student Learning Center at UC Berkeley. She has been working at a research lab under the nutritional science department. She has also co-facilitated a Decal course that discusses current issues and debates regarding food and nutrition in the country. The various ways and approaches through which she has been exposed to nutrition allow her to get a glimpse at nutrition through the perspectives of a teacher, a scientific researcher, and a public health practitioner. These different perspectives, in turn, give her a more subjective and comprehensive approach to nutrition education.</p>
+
+<p>Karen&apos;s broad range of involvements in the field of nutrition and education led her to be passionate in nutrition education. She believes that Fruitful Minds will not only equip children with essential knowledge in nutrition, but will also guide them towards healthier lifestyles, and ultimately, better lives.</p>')
