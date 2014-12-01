@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
+from main.models import MessageBar
 
 # Create your views here.
 def index(request):
-        template = loader.get_template('main/index.html')
-        context = RequestContext(request, None)
-	return HttpResponse(template.render(context))
+        latest_message = MessageBar.objects.order_by('-pub_date')[0]
+        context = {'latest_message' : latest_message}
+        return render(request, 'main/index.html', context)
 
 def students(request):
 	template = loader.get_template('main/students.html')

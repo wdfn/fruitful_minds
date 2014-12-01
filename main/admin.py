@@ -3,11 +3,8 @@ from main.models import MessageBar
 
 class MessageBarAdmin(admin.ModelAdmin):
 
-    fieldsets = [
-        (None, {'fields': ['text']}),
-        ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
-    ]
+    fields = ['text']
+    list_display = ('text', 'pub_date')
 
-
-admin.site.register(MessageBar)
+admin.site.register(MessageBar, MessageBarAdmin)
 # Register your models here.

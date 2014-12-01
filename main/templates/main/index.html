@@ -44,9 +44,11 @@
 	<hr />
 
 	<div id="portal-announce">
-	<strong>Fruitful Minds Annual Symposium on Nutrition Education</strong> &ndash; April 19, 2014<br />
-	Sugar: Perspectives and Practical Approaches for Healthy Living<br />
-	<a href="./symposium-2014.html">more information &#x95; purchase admission</a>
+            {% if latest_message %}
+                <p>{{ latest_message.text }}</p>
+            {% else %}
+                <p>Welcome to Fruitful Minds!</p>
+            {% endif %}
 	</div>
 
 	<div id="slideshow-container">
@@ -72,7 +74,7 @@
 
 <div id="footer">
 <div id="footer-content">
-&#x00A9; 2011&ndash;2013 Fruitful Minds, Inc.
+&#x00A9; 2011&ndash;2013 Fruitful Minds, Inc. <a href="{% url 'admin:index' %}">Admin</a>
 </div>
 </div>
 

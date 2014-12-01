@@ -7,6 +7,7 @@ from django.utils import timezone
 class MessageBar(models.Model):
 
     text = models.TextField()
+    pub_date = models.DateTimeField("date published", auto_now=True)
 
     def __unicode__(self):
         return self.text
