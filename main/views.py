@@ -4,7 +4,9 @@ from django.template import RequestContext, loader
 
 # Create your views here.
 def index(request):
-	return HttpResponse("Hello World. This is the index")
+        template = loader.get_template('main/index.html')
+        context = RequestContext(request, None)
+	return HttpResponse(template.render(context))
 
 def students(request):
 	template = loader.get_template('main/students.html')

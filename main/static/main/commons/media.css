@@ -1,0 +1,24 @@
+ul.slideshow {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.slideshow li {
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+}
+.slideshow-text {
+	position: absolute;
+	top: 260px;
+	left: 100px;
+	width: 400px;
+	padding: 0 2em 1em 2em;
+	background: rgb(255, 255, 255); /* fallback for IE: <http://css-tricks.com/ie-background-rgb-bug/> */
+	background: rgba(255, 255, 255, 0.85);
+	line-height: 1.3em;
+
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}

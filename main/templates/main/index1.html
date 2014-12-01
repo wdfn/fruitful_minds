@@ -1,9 +1,11 @@
-{% load staticfiles %}
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'main/commons/portal.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'main/commons/media.css' %}" />
-    <script src="{% static 'main/commons/script.js' %}" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="./commons/portal.css" />
+	<link rel="stylesheet" type="text/css" href="./commons/media.css" />
+	<script src="./commons/script.js" type="text/javascript" charset="utf-8"></script>
 	<title>Fruitful Minds</title>
 <script type="text/javascript">
 	var _gaq = _gaq || [];
@@ -27,8 +29,8 @@
 	</ul>
 	-->
 	<div id="portal">
-		<a class="portal-button" href="{% url 'main:students' %}">
-			<img src="{% static 'main/commons/grape_solid.png' %}" alt="" /><br />
+		<a class="portal-button" href="./students.html">
+			<img src="./commons/grape_solid.png" alt="" /><br />
 			Students &amp;<br/>Parents
 		</a>
 		<a class="portal-button" href="./educators.html">
