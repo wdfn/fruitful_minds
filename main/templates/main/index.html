@@ -31,12 +31,12 @@
 			<img src="{% static 'main/commons/grape_solid.png' %}" alt="" /><br />
 			Students &amp;<br/>Parents
 		</a>
-		<a class="portal-button" href="./educators.html">
-			<img src="./commons/apple_solid.png" alt="" /><br />
+		<a class="portal-button" href="{% url 'main:educators' %}">
+			<img src="{% static 'main/commons/apple_solid.png' %}" alt="" /><br />
 			Educators
 		</a>
-		<a class="portal-button last" href="./involved.html">
-			<img src="./commons/pear_solid.png" alt="" /><br />
+		<a class="portal-button last" href="{% url 'main:involved' %}">
+			<img src="{% static 'main/commons/pear_solid.png' %}" alt="" /><br />
 			Get Involved
 		</a>
 	</div>
@@ -57,15 +57,14 @@
 		<li><img src="./gallery/portal/DSC_4327.jpg" alt="" width="340px" height="226px" /><div class="portal-quote">&quot;The Unity Council recognizes Fruitful Minds for their dedication in serving multi-cultural communities through an inventive and creative curriculum.  Participants in our Girls Sports Program have become more conscientious of their everyday eating habits, nutritional facts and the importance of exercise.&quot;<div class="portal-quote-attrib">&mdash; Meron Misgun, Youth Services Manager, The Unity Council</div></div></li>
 	</ul>
 	</div>
-	
 	<div id="portal-summary">
 	<p>Fruitful Minds places college students in local elementary and middle schools to deliver nutrition education.</p>
 	<p>We inspire young students to be the best they can be through healthy choices while providing college students with professional development.</p>
 	</div>
-	<a class="portal-link" href="./mission.html">About</a>
-	<a class="portal-link" href="./students.html#news">News</a>
-	<a class="portal-link" href="./contact.html">Contact Us</a>
-	<a class="portal-link" href="./donate.html">Donate</a>
+	<a class="portal-link" href="{% url 'main:mission' %}">About</a>
+	<a class="portal-link" href="{% url 'main:students' %}">News</a>
+	<a class="portal-link" href="{% url 'main:contact' %}">Contact Us</a>
+	<a class="portal-link" href="{% url 'main:donate' %}">Donate</a>
 
 	<div class="clear"></div>
 

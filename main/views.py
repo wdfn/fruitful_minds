@@ -31,3 +31,34 @@ def play(request):
 	context = RequestContext(request, None)
 
 	return HttpResponse(template.render(context))
+
+def educators(request):
+        template = loader.get_template('main/educators.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def involved(request):
+        template = loader.get_template('main/involved.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def mission(request):
+        template = loader.get_template('main/mission.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def contact(request):
+        template = loader.get_template('main/contact.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def donate(request):
+        template = loader.get_template('main/donate.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
