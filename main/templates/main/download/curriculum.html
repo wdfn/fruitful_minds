@@ -76,7 +76,7 @@ table.files tr.file:hover td {
 <div id="container">
 <span id="top"></span>
 <div id="masthead">
-<a id="logo" href="./index.html"><img src="{% static "main/commons/logo_full.png" %}" alt="Fruitful Minds" /></a>
+<a id="logo" href="{% url "main:index" %}"><img src="{% static "main/commons/logo_full.png" %}" alt="Fruitful Minds" /></a>
 <ul id="topnav">
 	<li id="nav1" class="topnav-box">
 		<a class="topnav-link" href="../students.html">Students &amp; Parents</a>
