@@ -31,6 +31,8 @@ urlpatterns = patterns('',
     url(r'^services.html', views.services, name='services'),
     #supporters
     url(r'^supporters.html', views.supporters, name='supporters'),
+    #downloadcurriculum-to-homepage
+    url(r'^download/index.html', views.index, name='index'),
 
     #links
     url(r'^articles/decal.html', views.decal, name='decal'),

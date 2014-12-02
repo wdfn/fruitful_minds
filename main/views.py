@@ -5,10 +5,11 @@ from main.models import MessageBar, ImageSlideshow
 
 # Create your views here.
 def index(request):
-        latest_message = MessageBar.objects.order_by('-pub_date')[0]
-        photos = ImageSlideshow.objects.order_by('-id')
-        context = {'latest_message' : latest_message, 'photos' : photos }
-        return render(request, 'main/index.html', context)
+    latest_message = MessageBar.objects.order_by('-pub_date')[0]
+    photos = ImageSlideshow.objects.order_by('-id')
+    context = {'latest_message' : latest_message, 'photos' : photos }
+    return render(request, 'main/index.html', context)
+
 
 def students(request):
 	template = loader.get_template('main/students.html')
@@ -225,3 +226,4 @@ def harvestofthemonth(request):
         context = RequestContext(request, None)
 
         return HttpResponse(template.render(context))
+
