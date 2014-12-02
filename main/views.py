@@ -5,9 +5,9 @@ from main.models import MessageBar
 
 # Create your views here.
 def index(request):
-        latest_message = MessageBar.objects.order_by('-pub_date')[0]
-        context = {'latest_message' : latest_message}
-        return render(request, 'main/index.html', context)
+    latest_message = MessageBar.objects.order_by('-pub_date')[0]
+    context = {'latest_message' : latest_message}
+    return render(request, 'main/index.html', context)
 
 def students(request):
 	template = loader.get_template('main/students.html')
@@ -223,4 +223,4 @@ def harvestofthemonth(request):
         template = loader.get_template('main/extern/harvest-of-the-month.html')
         context = RequestContext(request, None)
 
-        return HttpResponse(template.render(context))
+        return HttpResponse(template.render(context))   
