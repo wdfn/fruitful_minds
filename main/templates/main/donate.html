@@ -1,10 +1,11 @@
+{% load staticfiles %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="./commons/skin.css" />
-	<link rel="stylesheet" type="text/css" href="./commons/media.css" />
+	<link rel="stylesheet" type="text/css" href="{% static "main/commons/skin.css" %}" />
+	<link rel="stylesheet" type="text/css" href="{% static "main/commons/media.css" %}" />
 	<style type="text/css" media="screen,projection">/*<![CDATA[*/
 
 	/*]]>*/</style>
@@ -32,7 +33,7 @@
 <div id="container">
 <span id="top"></span>
 <div id="masthead">
-<a id="logo" href="./index.html"><img src="./commons/logo_full.png" alt="Fruitful Minds" /></a>
+<a id="logo" href="./index.html"><img src="{% static "main/commons/logo_full.png" %}" alt="Fruitful Minds" /></a>
 <ul id="topnav">
 	<li id="nav1" class="topnav-box">
 		<a class="topnav-link" href="./students.html">Students &amp; Parents</a>
@@ -86,7 +87,7 @@ nav3.src = "./commons/nav3b.png";
 <div id="donate-paypal">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <fieldset>
-	<legend><img src="./commons/paypal_solution.gif" alt="PayPal / Credit" height="52px" /></legend>
+	<legend><img src="{% static "main/commons/paypal_solution.gif" %}" alt="PayPal / Credit" height="52px" /></legend>
 	<input type="hidden" name="cmd" value="_donations" />
 	<input type="hidden" name="charset" value="utf-8" />
 	<input type="hidden" name="business" value="TR3MG3H9S2C9A" />
@@ -124,7 +125,7 @@ nav3.src = "./commons/nav3b.png";
 		<option value="TRY">TRY &ndash; TL</option>
 	</select>
 	<div style="margin-top: 1em; text-align: center">
-		<input name="submit" type="image" src="./commons/paypal_donate.gif" alt="Make payments with PayPal" />
+		<input name="submit" type="image" src="{% static "main/commons/paypal_donate.gif" %}" alt="Make payments with PayPal" />
 	</div>
 </fieldset>
 </form>

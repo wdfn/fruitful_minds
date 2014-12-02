@@ -1,10 +1,11 @@
+{% load staticfiles %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="./commons/skin.css" />
-	<link rel="stylesheet" type="text/css" href="./commons/media.css" />
+	<link rel="stylesheet" type="text/css" href="{% static "main/commons/skin.css" %}" />
+	<link rel="stylesheet" type="text/css" href="{% static "main/commons/media.css" %}" />
 	<style type="text/css" media="screen,projection">/*<![CDATA[*/
 
 #involv-col1 {
@@ -56,7 +57,7 @@
 <div id="container">
 <span id="top"></span>
 <div id="masthead">
-<a id="logo" href="./index.html"><img src="./commons/logo_full.png" alt="Fruitful Minds" /></a>
+<a id="logo" href="./index.html"><img src="{% static "main/commons/logo_full.png" %}" alt="Fruitful Minds" /></a>
 <ul id="topnav">
 	<li id="nav1" class="topnav-box">
 		<a class="topnav-link" href="./students.html">Students &amp; Parents</a>
@@ -125,7 +126,7 @@ nav3.src = "./commons/nav3b.png";
 <div class="clear"></div>
 
 <div id="group-img" class="captioned">
-	<a href="./media/inspiring-20110504.jpg"><img src="./media/inspiring-20110504_thumb.jpg" width="500px" alt="Fruitful Minds student board" /></a>
+	<a href="main/media/inspiring-20110504.jpg"><img src="{% static "main/media/inspiring-20110504_thumb.jpg" %}" width="500px" alt="Fruitful Minds student board" /></a>
 	<br />
 	<div class="caption">Fruitful Minds student board at the Inspiring a Healthier Tomorrow student recognition event: (from right) Stephanie Yan, Karen Yang, Sarah French, Allyson Cesario, Erin Dunn, Colleen Lynch, Julie Lee, Regine Leger, Paulina Altshuler, Jessica Jew, A. Ou, B. Kim.</div>
 </div>

@@ -63,3 +63,83 @@ def donate(request):
 
         return HttpResponse(template.render(context))
 
+def download(request):
+        template = loader.get_template('main/download/curriculum.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def mail(request):
+        template = loader.get_template('main/mail.cgi')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def services(request):
+        template = loader.get_template('main/services.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def supporters(request):
+        template = loader.get_template('main/supporters.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def team(request):
+        template = loader.get_template('main/team.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def allyson_cesario(request):
+        template = loader.get_template('main/team/allyson-cesario.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def paulina_altshuler(request):
+        template = loader.get_template('main/team/paulina-altshuler.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def sarah_french(request):
+        template = loader.get_template('main/team/sarah-french.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def kai_ouye(request):
+        template = loader.get_template('main/team/kai-ouye.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def teresa_tucker(request):
+        template = loader.get_template('main/team/teresa-tucker.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+
+def connie_tien(request):
+        template = loader.get_template('main/team/connie-tien.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+
+def eunice_lam(request):
+        template = loader.get_template('main/team/eunice-lam.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+
+def lauren_mcavoy(request):
+        template = loader.get_template('main/team/lauren-mcavoy.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
