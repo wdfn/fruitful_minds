@@ -11,3 +11,13 @@ class MessageBar(models.Model):
 
     def __unicode__(self):
         return self.text
+
+class ImageSlideshow(models.Model):
+
+    photo = models.ImageField(upload_to='portal')
+    quote = models.TextField()
+    attribution = models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return self.quote
+

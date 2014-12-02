@@ -65,7 +65,6 @@ urlpatterns = patterns('',
     #lauren
     url(r'^team/lauren-mcavoy.html', views.lauren_mcavoy, name='lauren-mcavoy'),
 
-
     #play for testing
     #TODO remove this before release
     url(r'^play.html', views.play, name='play'),
