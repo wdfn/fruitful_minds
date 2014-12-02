@@ -52,13 +52,16 @@
 	</div>
 
 	<div id="slideshow-container">
-	<ul id="portal-slideshow" class="slideshow">
-		<li><img src="./gallery/portal/DSC_4276.jpg" alt="" width="340px" height="226px" /><div class="portal-quote">&quot;I was impressed by the valuable nutritional information presented by Fruitful Minds &ndash; essential for meeting the needs of today&#39;s kids.  The hands-on, interactive nature of the presentations keeps the kids engaged.&quot;<div class="portal-quote-attrib">&mdash; Cindy Soulier, Piedmont Middle School, 7th Grade Science Teacher</div></div></li>
-		<li><img src="./gallery/portal/DSC_4280.jpg" alt="" width="340px" height="226px" /><div class="portal-quote">&quot;I was impressed by the valuable nutritional information presented by Fruitful Minds &ndash; essential for meeting the needs of today&#39;s kids.  The hands-on, interactive nature of the presentations keeps the kids engaged.&quot;<div class="portal-quote-attrib">&mdash; Cindy Soulier, Piedmont Middle School, 7th Grade Science Teacher</div></div></li>
-		<li><img src="./gallery/portal/DSC_4307.jpg" alt="" width="340px" height="226px" /><div class="portal-quote">&quot;The Unity Council recognizes Fruitful Minds for their dedication in serving multi-cultural communities through an inventive and creative curriculum.  Participants in our Girls Sports Program have become more conscientious of their everyday eating habits, nutritional facts and the importance of exercise.&quot;<div class="portal-quote-attrib">&mdash; Meron Misgun, Youth Services Manager, The Unity Council</div></div></li>
-		<li><img src="./gallery/portal/DSC_4327.jpg" alt="" width="340px" height="226px" /><div class="portal-quote">&quot;The Unity Council recognizes Fruitful Minds for their dedication in serving multi-cultural communities through an inventive and creative curriculum.  Participants in our Girls Sports Program have become more conscientious of their everyday eating habits, nutritional facts and the importance of exercise.&quot;<div class="portal-quote-attrib">&mdash; Meron Misgun, Youth Services Manager, The Unity Council</div></div></li>
-	</ul>
-	</div>
+            {% if photos %}
+        	<ul id="portal-slideshow" class="slideshow">
+	            {% for photo in photos %}
+                        <li><img src="{{ photo.photo.url }}" alt="" width="340px" height="226px" /><div class="portal-quote">&quot;"{{ photo.quote }}"&quot;<div class="portal-quote-attrib">&mdash;"{{ photo.attribution }}"</div></div></li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No photos available</p>
+            {% endif %}
+        </div>
 	<div id="portal-summary">
 	<p>Fruitful Minds places college students in local elementary and middle schools to deliver nutrition education.</p>
 	<p>We inspire young students to be the best they can be through healthy choices while providing college students with professional development.</p>
