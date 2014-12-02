@@ -1,4 +1,4 @@
-
+{% load staticfiles %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -39,7 +39,7 @@ html, body {
 
 <object id="content" data="http://www.harvestofthemonth.com/"></object>
 <div id="overlay">
-<img class="icon" src="../commons/left-arrow.png" alt="" width="30px" />
+<img class="icon" src="{% static 'main/commons/left-arrow.png' %}" alt="" width="30px" />
 	<a id="return" href="../students.html">return to <b>Fruitful Minds</b></a> |
 	<a id="close" href="http://www.harvestofthemonth.com/">close</a>
 </div></div>

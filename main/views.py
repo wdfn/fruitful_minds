@@ -87,6 +87,8 @@ def supporters(request):
 
         return HttpResponse(template.render(context))
 
+# team 
+
 def team(request):
         template = loader.get_template('main/team.html')
         context = RequestContext(request, None)
@@ -140,6 +142,85 @@ def eunice_lam(request):
 
 def lauren_mcavoy(request):
         template = loader.get_template('main/team/lauren-mcavoy.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+# articles
+
+def decal(request):
+        template = loader.get_template('main/articles/decal.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def fiber(request):
+        template = loader.get_template('main/articles/dietary-fiber-and-its-health-benefits.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def eathealthy(request):
+        template = loader.get_template('main/articles/eat-healthy-eat-smart.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def freeradicals(request):
+        template = loader.get_template('main/articles/free-radicals-and-antioxidants.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def heartattackgrill(request):
+        template = loader.get_template('main/articles/heart-attack-grill.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def organicproduce(request):
+        template = loader.get_template('main/articles/is-organic-produce-really-better.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def collegestudent(request):
+        template = loader.get_template('main/articles/the-health-of-a-college-student.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+def menulabeling(request):
+        template = loader.get_template('main/articles/with-menu-labeling-laws.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+# extern
+
+def analyzeplate(request):
+        template = loader.get_template('main/extern/analyze-my-plate.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+
+def berkeley(request):
+        template = loader.get_template('main/extern/berkeley.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+
+def eastbay(request):
+        template = loader.get_template('main/extern/farmers-markets-eastbay.html')
+        context = RequestContext(request, None)
+
+        return HttpResponse(template.render(context))
+
+
+def harvestofthemonth(request):
+        template = loader.get_template('main/extern/harvest-of-the-month.html')
         context = RequestContext(request, None)
 
         return HttpResponse(template.render(context))

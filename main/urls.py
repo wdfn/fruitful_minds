@@ -32,6 +32,20 @@ urlpatterns = patterns('',
     #supporters
     url(r'^supporters.html', views.supporters, name='supporters'),
 
+    #links
+    url(r'^articles/decal.html', views.decal, name='decal'),
+    url(r'^articles/dietary-fiber-and-its-health-benefits.html', views.fiber, name='dietary-fiber-and-its-health-benefits'),
+    url(r'^articles/eat-healthy-eat-smart.html', views.eathealthy, name='eat-healthy-eat-smart'),
+    url(r'^articles/free-radicals-and-antioxidants.html', views.freeradicals, name='free-radicals-and-antioxidants'),
+    url(r'^articles/heart-attack-grill.html', views.heartattackgrill, name='heart-attack-grill'),
+    url(r'^articles/is-organic-produce-really-better.html', views.organicproduce, name='is-organic-produce-really-better'),
+    url(r'^articles/the-health-of-a-college-student.html', views.collegestudent, name='the-health-of-a-college-student'),
+    url(r'^articles/with-menu-labeling-laws.html', views.menulabeling, name='with-menu-labeling-laws'),
+    url(r'^extern/analyze-my-plate.html', views.analyzeplate, name='analyze-my-plate'),
+    url(r'^extern/berkeley.html', views.berkeley, name='berkeley'),
+    url(r'^extern/farmers-markets-eastbay.html', views.eastbay, name='farmers-markets-eastbay'),
+    url(r'^extern/harvest-of-the-month.html', views.harvestofthemonth, name='harvest-of-the-month'),
+
     #team
     url(r'^team.html', views.team, name='team'),
     #allyson
