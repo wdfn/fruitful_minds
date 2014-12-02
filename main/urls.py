@@ -1,8 +1,5 @@
 from django.conf.urls import patterns, url
 from main import views
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from django.conf import settings
-from django.conf.urls.static import static
 
 urlpatterns = patterns('',
     #index
@@ -72,5 +69,3 @@ urlpatterns = patterns('',
     #TODO remove this before release
     url(r'^play.html', views.play, name='play'),
 )
-
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
