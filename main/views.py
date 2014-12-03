@@ -1,7 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext, loader
 from main.models import MessageBar, ImageSlideshow
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 
 # Create your views here.
 def index(request):
@@ -65,11 +68,18 @@ def donate(request):
 
         return HttpResponse(template.render(context))
 
+@login_required
 def download(request):
         template = loader.get_template('main/download/curriculum.html')
         context = RequestContext(request, None)
 
         return HttpResponse(template.render(context))
+
+@login_required
+def user_logout(request):
+        logout(request)
+
+        return HttpResponseRedirect('/main/')
 
 def mail(request):
         template = loader.get_template('main/mail.cgi')

@@ -33,6 +33,8 @@ urlpatterns = patterns('',
     url(r'^supporters.html', views.supporters, name='supporters'),
     #downloadcurriculum-to-homepage
     url(r'^download/index.html', views.index, name='index'),
+    #logout
+    url(r'^logout/$', views.user_logout, name='logout'),                       
 
     #links
     url(r'^articles/decal.html', views.decal, name='decal'),

@@ -2,6 +2,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth.views import login
 
 from main import views
 
@@ -32,6 +33,8 @@ urlpatterns = patterns('',
     #play for testing
     #TODO remove this before release
     url(r'^play.html', views.play, name='play'),
+    #login for curriculum
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name': 'main/login.html'}),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
